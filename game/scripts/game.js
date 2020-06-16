@@ -1,0 +1,1 @@
+function exitGame(){window.location.replace("../index.html")}

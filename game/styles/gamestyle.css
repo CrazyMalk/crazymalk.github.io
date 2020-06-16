@@ -1,0 +1,9 @@
+body{
+	font-size: 30px;
+	font-family: 'Teko', sans-serif;
+	font-style: Regular 400;
+	background-color: #000000;
+}
+#exitGameButton{
+	float: right
+}
