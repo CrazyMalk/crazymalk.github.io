@@ -1,0 +1,87 @@
+html{
+	font-size: 30px;
+	font-family: 'Teko', sans-serif;
+	font-style: Regular 400;
+	background-color: #000000;
+}
+body{
+	width: 600px;
+	padding: 0 20px 20px 20px;
+	background-color: #1c1c1c;
+	margin: 0 auto;
+}
+img{
+	width: 100%;
+}
+h1, h2, h3{
+	color: red;
+	text-align: center;
+	font-style: Bold 700;
+	font-size: 50px;
+}
+.center{
+	display: block;
+	margin: 0 auto;
+}
+.collapsible {
+	background-color: #c7c7c7;
+	color: #000000;
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 25px;
+	font-style: Bold 700;
+}
+.activeCollapsible, .collapsible:hover {
+	background-color: #a8a8a8;
+}
+.collapsible:after{
+	content: '\02795';
+	font-size: 25px;
+	color: black;
+	float: right;
+	margin-left: 5px;
+}
+.activeCollapsible:after{
+	content: "\2796";
+}
+.collapsibleContent {
+	padding: 0 18px;
+	overflow: hidden;
+	background-color: #545454;
+	max-height: 0;
+	transition: max-height 0.3s ease-out;
+}
+.quote{
+	color: #e8e8e8;
+	font-size: 20px;
+	font-style: Light 300;
+}
+.pinkText{
+	color: #f200ff;
+}
+.clickSecret:hover{
+	content: " ";
+}
+.secretContent{
+	display: block;
+	margin: 0 auto;
+	max-height: 0px;
+}
+.secretActive{
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+}
+#id_1{
+	color: lime;
+	font-size: 40px;
+}
+#title_1{
+	border: 2px solid black;
+	font-size: 60px;
+}
+	
