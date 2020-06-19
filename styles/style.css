@@ -72,7 +72,23 @@ h1{
 	--rainbowSpeed: 0.2;
 }
 .clickSecret:hover{
+
 	content: " ";
+}
+#fullWindow{
+	height: 100%;
+}
+#fullWindowhtml{
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+#fullWindowbody{
+	margin: 0px;
+	min-height: 100%;
+	width: 100%;
+	padding: 0;
+	background-color: #000000;
 }
 .secretContent{
 	display: none;
@@ -81,8 +97,7 @@ h1{
 }
 .secretActive{
 	display: block;
-	/*margin: 0 auto;*/
-	height: 100%;
+	width: 100%;
 }
 .dogGameSection{
 	line-height: 10%

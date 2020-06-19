@@ -41,19 +41,21 @@ for (i = 0; i < collapsable.length; i++){
 				}
 			}
 			console.log(body.childElementCount);
-			body.style.width = window.innerWidth+"px";
-			body.style.height = window.innerHeight+"px";
 			body.style.backgroundColor = "#000000";
+			console.log(body.clientWidth)
 			console.log("number of secrets: "+secrets.length);
-			for (i = 0; i < secrets.length; i++){
-				secrets[i].classList.toggle("secretActive", true);
-				console.log(secrets[i].classList);
-			}
-			//body.firstChild.classList.toggle("secretActive");
-			//body.children[0].style.maxHeight = window.innerHeight;
-			//body.children[0].style.width = window.innerWidth;
+			body.id = 'fullWindowbody'
+			document.documentElement.id = 'fullWindowhtml'
 			
-
+			for (i = 0; i < secrets.length; i++){
+				const secret = secrets[i]
+				secret.classList.toggle("secretActive", true);
+				if (secret.nodeName.toLowerCase() === "video"){
+					secret.play()
+					secret.height = body.clientHeight;
+				}
+				console.log(secret.classList);
+			}
 		}
 	})
 }
